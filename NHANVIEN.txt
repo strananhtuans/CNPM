@@ -1,0 +1,18 @@
+CREATE TABLE public."NHANVIEN"
+(
+    "maNV" character(10) COLLATE pg_catalog."default" NOT NULL,
+    "tenNV" character(100) COLLATE pg_catalog."default",
+    "SDT" character(14) COLLATE pg_catalog."default" NOT NULL,
+    email character(150) COLLATE pg_catalog."default" NOT NULL,
+    "matKhau" character(100) COLLATE pg_catalog."default",
+    "loaiNV" integer,
+    "tinhTrang" boolean,
+    CONSTRAINT "NHANVIEN_pkey" PRIMARY KEY ("maNV", "SDT", email)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public."NHANVIEN"
+    OWNER to postgres;

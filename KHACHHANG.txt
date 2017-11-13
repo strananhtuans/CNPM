@@ -1,0 +1,16 @@
+CREATE TABLE public."KHACHHANG"
+(
+    "maKH" character(10) COLLATE pg_catalog."default" NOT NULL,
+    "tenKH" character(100) COLLATE pg_catalog."default",
+    "SDT" character(14) COLLATE pg_catalog."default",
+    email character(150) COLLATE pg_catalog."default",
+    "matKhau" character(100) COLLATE pg_catalog."default",
+    CONSTRAINT "KHACHHANG_pkey" PRIMARY KEY ("maKH")
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public."KHACHHANG"
+    OWNER to postgres;

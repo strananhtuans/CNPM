@@ -1,0 +1,18 @@
+CREATE TABLE public."CHUYENXE"
+(
+    "maCX" character(10) COLLATE pg_catalog."default" NOT NULL,
+    "gioKhH" time without time zone,
+    "diemKH" character(50) COLLATE pg_catalog."default",
+    "diemDen" character(50) COLLATE pg_catalog."default",
+    "soLuongGhe" integer,
+    "tinhTrang" integer,
+    "giaVe" money,
+    CONSTRAINT "ChuyenXe_pkey" PRIMARY KEY ("maCX")
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public."CHUYENXE"
+    OWNER to postgres;
